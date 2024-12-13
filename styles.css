@@ -1,0 +1,58 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header */
+header {
+    background: #007bff;
+    color: #fff;
+    padding: 1.5rem;
+    text-align: center;
+}
+header h1 {
+    margin: 0;
+}
+
+/* Navigation */
+nav {
+    background: #333;
+    padding: 0.5rem;
+    text-align: center;
+}
+nav a {
+    color: #fff;
+    margin: 0 1rem;
+    text-decoration: none;
+}
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Sections */
+section {
+    padding: 2rem;
+    max-width: 800px;
+    margin: 1rem auto;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+/* Links */
+a {
+    color: #007bff;
+    text-decoration: none;
+}
