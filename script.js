@@ -1,4 +1,9 @@
-// Add interactivity (if needed)
 document.addEventListener("DOMContentLoaded", () => {
-    console.log("Resume website loaded successfully!");
+    const navLinks = document.querySelectorAll("nav a");
+
+    navLinks.forEach(link => {
+        link.addEventListener("click", () => {
+            alert(`Navigating to ${link.textContent} section!`);
+        });
+    });
 });
