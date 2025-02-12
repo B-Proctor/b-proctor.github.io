@@ -3,9 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>Sign In</title>
     <link rel="stylesheet" href="styles.css">
-    <script defer src="animations.js"></script>
 </head>
 <body>
 
@@ -16,37 +15,39 @@
             <span class="bp-fullname">Braydyn Proctor</span>
         </a>
         <ul>
-            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="portfolio.html">Portfolio</a></li>
             <li><a href="contact.html">Contact</a></li>
             <li class="dropdown">
-                <a href="#" class="dropbtn">Account ▼</a>
+                <a href="#" class="dropbtn" class="active">Account ▼</a>
                 <div class="dropdown-content">
-                    <a href="signin.html">Sign In</a>
+                    <a href="signin.html" class="active">Sign In</a>
                     <a href="signup.html">Sign Up</a>
                 </div>
             </li>
         </ul>
     </nav>
 
-    <!-- Hero Section -->
-    <section class="hero-section">
-        <h1 class="fade-in">Welcome to My Portfolio</h1>
-        <p class="fade-in">Check out my projects, skills, and experience in software development and game design.</p>
-        <a href="portfolio.html" class="btn bounce">View Portfolio</a>
+    <section class="form-section">
+        <h1>Sign In</h1>
+        <form>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" placeholder="Enter your username"><br>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Enter your password"><br>
+            <input type="submit" value="Sign In">
+        </form>
+        <p><center>Don't have an account? <a href="signup.html">Sign Up</a></center></p>
     </section>
 
-    <!-- Footer -->
     <footer>
         <p>
             <a href="terms.html">Terms and Conditions</a> |
             <a href="privacy.html">Privacy Policy</a> |
             <a href="cookies.html">Cookie Policy</a>
         </p>
-        <p class="copyright">© 2025 Braydyn Proctor. All Rights Reserved.</p>
     </footer>
 
 </body>
-
 </html>

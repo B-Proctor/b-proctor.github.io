@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="animations.js"></script>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav>
+        <a href="index.html" class="bp-logo">
+            <span class="bp-initials">BP</span>
+            <span class="bp-fullname">Braydyn Proctor</span>
+        </a>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="portfolio.html" class="active">Portfolio</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropbtn">Account ▼</a>
+                <div class="dropdown-content">
+                    <a href="signin.html">Sign In</a>
+                    <a href="signup.html">Sign Up</a>
+                </div>
+            </li>
+        </ul>
+    </nav>
+
+    <section class="portfolio-section">
+        <h1 class="fade-in">My Projects</h1>
+
+        <div class="project-card slide-in" onclick="toggleDetails('project1')">
+            <h3>Console Line Calculator</h3>
+            <div class="project-details" id="project1">
+                <ul>
+                    <li>Engineered a precision calculator for fraction operations, enhancing accuracy and minimizing user errors.</li>
+                    <li>Developed a command-line based calculator using C++ to handle basic arithmetic operations, including addition, subtraction, multiplication, and division.</li>
+                    <li>Utilized Agile software engineering methods to develop, debug, and test the calculator, reducing development time by 20% and identifying critical bugs.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="project-card slide-in" onclick="toggleDetails('project2')">
+            <h3>IT Help Desk (Twin Falls High School)</h3>
+            <div class="project-details" id="project2">
+                <ul>
+                    <li>Performed maintenance and repair on school computers, printers, projectors, and other IT equipment, ensuring minimal downtime and optimal functionality.</li>
+                    <li>Set up and managed streaming platforms for the school's sports events, enhancing event accessibility and engagement.</li>
+                    <li>Assisted with various IT projects, including hardware troubleshooting, software installations, and network support, contributing to the overall efficiency of the school's technology infrastructure.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="project-card slide-in" onclick="toggleDetails('project3')">
+            <h3>U.I.S.H (Operating Systems)</h3>
+            <p>Custom-built shell program that mimics Linux functionality.</p>
+            <div class="project-details" id="project3">
+                <p><strong>Project Type:</strong> System Software</p>
+                <p><strong>Language:</strong> C</p>
+                <p><strong>Features:</strong></p>
+                <ul>
+                    <li>Designed & implemented UIdaho Shell to replicate Linux commands.</li>
+                    <li>Added execution, piping, and redirection features.</li>
+                    <li>Managed process control, file handling, and user input.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="project-card slide-in" onclick="toggleDetails('project4')">
+            <h3>Resume</h3>
+            <p>My general resume showcasing my skills and experience.</p>
+            <div class="project-details" id="project4">
+                <p><strong>Name:</strong> Braydyn Proctor</p>
+                <p><strong>Role:</strong> Software Engineer Intern</p>
+                <p><strong>Email:</strong> <a href="mailto:braydynproctor1@gmail.com">braydynproctor1@gmail.com</a></p>
+                <p><strong>Location:</strong> Moscow, ID</p>
+
+                <h4>Education</h4>
+                <p><strong>University of Idaho</strong> - Bachelor of Science in Computer Science (Aug 2021 - est. 2026)</p>
+                <p><strong>Relevant Courses:</strong> Computer Science I & II, Computer Organization, Programming Languages, System Software, Operating Systems, Discrete Mathematics, Calculus 1</p>
+                <p><strong>Current Courses:</strong> Software Engineering, Database Systems, Cybersecurity and Privacy, Linear Algebra, Contemporary Issues in CS </p>
+
+                <h4>Skills</h4>
+                <ul>
+                    <li>System Software Development</li>
+                    <li>Computer Architecture</li>
+                    <li>Data Structures & Algorithms</li>
+                    <li>Programming Languages: C, C++, C#</li>
+                    <li>Debugging & Troubleshooting</li>
+                    <li>Version Control: Git, GitHub</li>
+                    <li>Software Development: Agile, Scrum</li>
+                    <li>Shell Scripting & Automation</li>
+                    <li>Memory Management & Optimization</li>
+                    <li>Military Secret Security Clearance</li>
+                </ul>
+
+                <h4>Work Experience</h4>
+                <p><strong>Automated Logistical Specialist - Idaho Army National Guard</strong> (February 2023 - Present)</p>
+                <ul>
+                    <li>Adapted to high-stress situations while maintaining efficiency and precision.</li>
+                    <li>Managed logistics, including inventory tracking, supply chain coordination, and equipment distribution.</li>
+                    <li>Implemented organizational strategies to optimize resource allocation and reduce operational inefficiencies.</li>
+                    <li>Worked in a disciplined, team-oriented environment, requiring strong communication and problem-solving skills.</li>
+                </ul>
+
+                <p><strong>Front Desk Assistant - University of Idaho Student Accounts</strong> (Aug 2022 - May 2023)</p>
+                <ul>
+                    <li>Assisted students with financial records and account inquiries, ensuring accuracy and compliance with university policies.</li>
+                    <li>Handled and documented incoming calls, providing efficient problem resolution and follow-up communication.</li>
+                    <li>Maintained accurate records of financial transactions and student interactions.</li>
+                    <li>Worked with confidential information while adhering to data security and privacy policies.</li>
+                </ul>
+
+                <p><strong>Team Member - Garden of Eden Oasis Diner</strong> (February 2020 - July 2021)</p>
+                <ul>
+                    <li>Trained and worked in multiple roles, including Cook, Server, Busser, and Dishwasher, ensuring smooth daily operations.</li>
+                    <li>Managed food preparation and adhered to health and safety regulations in a fast-paced environment.</li>
+                    <li>Used employee shift checklists to maintain cleanliness and operational standards.</li>
+                    <li>Assisted in training new staff members, fostering a collaborative and productive work environment.</li>
+                </ul>
+
+                <h4>Activities & Leadership</h4>
+                <ul>
+                    <li>Lambda Chi Alpha Officer (Scholastics Chair, Ritualist Chair)</li>
+                    <li>Game Devs United - President</li>
+                    <li>University of Idaho Homecoming Committee - Vice President (2024)</li>
+                    <li>University of Idaho Homecoming Committee - President (2025)</li>
+                    <li>Student Alumni Relations Board - VP of Development (2025)</li>
+                </ul>
+            </div>
+        </div>
+
+    </section>
+
+    <footer>
+        <p>
+            <a href="terms.html">Terms and Conditions</a> |
+            <a href="privacy.html">Privacy Policy</a> |
+            <a href="cookies.html">Cookie Policy</a>
+        </p>
+        <p class="copyright">© 2025 Braydyn Proctor. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
